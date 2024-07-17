@@ -5,12 +5,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Vue Toolbox - Coming Soon</title>
     <link rel="icon" type="image/png" href="/images/favicon.png">
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-98Q7KDW9XB"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments)
+        }
+
+        gtag('js', new Date());
+        gtag('config', 'G-98Q7KDW9XB');
+    </script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
     <style>
         body, html {
             margin: 0;
             padding: 0;
             height: 100%;
-            font-family: Arial, sans-serif;
+            font-family: 'Poppins', sans-serif;
             background-color: #ffffff;
             color: #333333;
         }
@@ -18,7 +30,9 @@
         .container {
             display: flex;
             height: 100%;
-            margin: 0 3rem;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 2rem;
         }
 
         .text-content {
@@ -38,21 +52,24 @@
         }
 
         .image-content img {
-            max-width: 100%;
-            max-height: 100%;
+            max-width: 90%;
+            max-height: 90%;
             object-fit: contain;
         }
 
         h1 {
-            font-size: 3em;
+            font-size: 3.5em;
+            font-weight: 600;
             margin-bottom: 20px;
             color: #41b883; /* Vue.js green color */
+            letter-spacing: -0.5px;
         }
 
         p {
             font-size: 1.2em;
-            margin-bottom: 30px;
+            margin-bottom: 20px;
             line-height: 1.6;
+            max-width: 600px;
         }
 
         @media (max-width: 768px) {
@@ -65,21 +82,18 @@
             }
 
             .image-content {
-                height: 50vh;
+                height: 40vh;
+            }
+
+            h1 {
+                font-size: 2.5em;
+            }
+
+            p {
+                font-size: 1em;
             }
         }
     </style>
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-98Q7KDW9XB"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-
-        function gtag() {
-            dataLayer.push(arguments)
-        }
-
-        gtag('js', new Date());
-        gtag('config', 'G-98Q7KDW9XB');
-    </script>
 </head>
 <body>
 <div class="container">

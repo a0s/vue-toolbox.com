@@ -21,18 +21,23 @@
         body, html {
             margin: 0;
             padding: 0;
-            height: 100%;
             font-family: 'Poppins', sans-serif;
             background-color: #ffffff;
             color: #333333;
         }
 
-        .container {
+        .main-container {
+            min-height: 100vh;
             display: flex;
-            height: 100%;
+            flex-direction: column;
+        }
+
+        .content {
+            display: flex;
             max-width: 1200px;
             margin: 0 auto;
             padding: 0 2rem;
+            min-height: 100vh;
         }
 
         .text-content {
@@ -61,7 +66,7 @@
             font-size: 3.5em;
             font-weight: 600;
             margin-bottom: 20px;
-            color: #41b883; /* Vue.js green color */
+            color: #41b883;
             letter-spacing: -0.5px;
         }
 
@@ -72,8 +77,40 @@
             max-width: 600px;
         }
 
+        .seo-footer {
+            background-color: #f8f8f8;
+            padding: 2rem 0;
+            margin-top: 2rem;
+        }
+
+        .seo-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 2rem;
+            display: flex;
+            justify-content: space-between;
+            font-size: 0.8em;
+            color: #888;
+            line-height: 1.6;
+        }
+
+        .seo-column {
+            flex: 1;
+            margin: 0 1rem;
+        }
+
+        .seo-content ul {
+            margin: 0;
+            padding: 0 0 0 1rem;
+            list-style-type: none;
+        }
+
+        .seo-content li {
+            margin-bottom: 0.5rem;
+        }
+
         @media (max-width: 768px) {
-            .container {
+            .content {
                 flex-direction: column;
             }
 
@@ -92,20 +129,111 @@
             p {
                 font-size: 1em;
             }
+
+            .seo-content {
+                flex-direction: column;
+            }
+
+            .seo-column {
+                margin: 1rem 0;
+            }
         }
     </style>
 </head>
 <body>
-<div class="container">
-    <div class="text-content">
-        <h1>Vue Toolbox</h1>
-        <p>Coming Soon: Your ultimate resource for Vue.js libraries and tools</p>
-        <p>Stay tuned for the launch of a comprehensive catalog of Vue.js components, plugins, and development tools to
-            supercharge your projects!</p>
+<div class="main-container">
+        <div class="content">
+            <div class="text-content">
+                <h1>Vue Toolbox</h1>
+                <p>Coming Soon: Your ultimate resource for Vue.js libraries and tools</p>
+                <p>Stay tuned for the launch of a comprehensive catalog of Vue.js components, plugins, and development tools to supercharge your projects!</p>
+            </div>
+            <div class="image-content">
+                <img src="/images/poster.webp" alt="Vue Toolbox">
+            </div>
+        </div>
+        <footer class="seo-footer">
+            <div class="seo-content">
+                <div class="seo-column">
+                    <ul>
+                        <li>Resources</li>
+                        <li>Official Resources</li>
+                        <li>External Resources</li>
+                        <li>Job Portal</li>
+                        <li>Community</li>
+                        <li>Conferences</li>
+                        <li>Podcasts</li>
+                        <li>Youtube Channels</li>
+                        <li>Official Examples</li>
+                        <li>Tutorials</li>
+                        <li>Examples</li>
+                        <li>Books</li>
+                        <li>Blog Posts</li>
+                        <li>Courses</li>
+                        <li>Documentaries</li>
+                        <li>Projects Using Vue.js</li>
+                        <li>Open Source</li>
+                        <li>Commercial Products</li>
+                        <li>Apps/Websites</li>
+                        <li>Interactive Experiences</li>
+                        <li>Enterprise Usage</li>
+                        <li>A11y</li>
+                    </ul>
+                </div>
+                <div class="seo-column">
+                    <ul>
+                        <li>Components & Libraries</li>
+                        <li>Frameworks</li>
+                        <li>Responsive</li>
+                        <li>Mobile</li>
+                        <li>Component Collections</li>
+                        <li>Admin Template</li>
+                        <li>Server-side rendering</li>
+                        <li>Static website generator</li>
+                        <li>Other</li>
+                        <li>UI Layout</li>
+                        <li>UI Components</li>
+                        <li>Table</li>
+                        <li>Notification</li>
+                        <li>Loader</li>
+                        <li>Progress Bar</li>
+                        <li>Tooltip</li>
+                        <li>Overlay</li>
+                        <li>Parallax</li>
+                        <li>Icons</li>
+                        <li>Marquee</li>
+                        <li>Menu</li>
+                        <li>Minus Plus Input</li>
+                    </ul>
+                </div>
+                <div class="seo-column">
+                    <ul>
+                        <li>UI Utilities</li>
+                        <li>Event Handling</li>
+                        <li>Responsive Design</li>
+                        <li>Form Validation</li>
+                        <li>Resize</li>
+                        <li>Scroll</li>
+                        <li>Routing</li>
+                        <li>Lazy Load</li>
+                        <li>Pagination</li>
+                        <li>Animation</li>
+                        <li>Meta Tags</li>
+                        <li>Portal</li>
+                        <li>Filters</li>
+                        <li>SVG</li>
+                        <li>Miscellaneous</li>
+                        <li>WebGL</li>
+                        <li>Fullscreen</li>
+                        <li>Page visibility</li>
+                        <li>Printing</li>
+                        <li>Utilities</li>
+                        <li>Typescript</li>
+                        <li>HTTP Requests</li>
+                    </ul>
+                </div>
+            </div>
+        </footer>
     </div>
-    <div class="image-content">
-        <img src="/images/poster.webp" alt="Vue Toolbox">
-    </div>
-</div>
 </body>
 </html>

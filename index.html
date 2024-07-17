@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vue Toolbox - Coming Soon</title>
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            font-family: Arial, sans-serif;
+            background-color: #ffffff;
+            color: #333333;
+        }
+
+        .container {
+            display: flex;
+            height: 100%;
+        }
+
+        .text-content {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            padding: 2rem;
+        }
+
+        .image-content {
+            flex: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            overflow: hidden;
+        }
+
+        .image-content img {
+            max-width: 100%;
+            max-height: 100%;
+            object-fit: contain;
+        }
+
+        h1 {
+            font-size: 3em;
+            margin-bottom: 20px;
+            color: #41b883; /* Vue.js green color */
+        }
+
+        p {
+            font-size: 1.2em;
+            margin-bottom: 30px;
+            line-height: 1.6;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                flex-direction: column;
+            }
+
+            .text-content, .image-content {
+                flex: none;
+            }
+
+            .image-content {
+                height: 50vh;
+            }
+        }
+    </style>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-98Q7KDW9XB"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+        gtag('config', 'G-98Q7KDW9XB');
+    </script>
+</head>
+<body>
+<div class="container">
+    <div class="text-content">
+        <h1>Vue Toolbox</h1>
+        <p>Coming Soon: Your ultimate resource for Vue.js libraries and tools</p>
+        <p>Stay tuned for the launch of a comprehensive catalog of Vue.js components, plugins, and development tools to
+            supercharge your projects!</p>
+    </div>
+    <div class="image-content">
+        <img src="/images/poster.webp" alt="Vue Toolbox">
+    </div>
+</div>
+</body>
+</html>
